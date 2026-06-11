@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chav Solutions product catalogue with mocked prices for printing, branding, signage and IT services." />
+  <title>Products & Mock Prices | Chav Solutions</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="catalog-page">
+  <div class="top-strip">
+    <div class="container top-strip-wrap">
+      <div class="top-strip-left">
+        <span>Email: hello@chavsolutions.co.za</span>
+        <span>Phone: +27 11 555 0123</span>
+        <span>Product Catalogue & Mock Prices</span>
+      </div>
+      <a href="index.html#quote" class="top-visit">Request Final Quote</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="brand" aria-label="Chav Solutions home">
+        <img src="assets/logo/chav_solution_logo-removebg-preview.png" alt="Chav Solutions logo" class="brand-logo" />
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary navigation"></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container">
+        <p class="eyebrow">Products Catalogue</p>
+        <h1>Browse product ranges and mock prices.</h1>
+        <p class="hero-lead">Use these sample prices for planning. Final pricing depends on size, material, quantity, artwork, installation and support scope.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogGrid">View Products</a>
+          <a class="btn btn-secondary" href="index.html#quote">Request Final Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <div>
+            <p class="eyebrow">Mock Pricing</p>
+            <h2>Available products and service ranges</h2>
+          </div>
+          <div class="catalog-filter-row" aria-label="Catalogue filters">
+            <button type="button" class="catalog-filter active" data-catalog-filter="All">All</button>
+            <button type="button" class="catalog-filter" data-catalog-filter="Printing & Branding">Printing & Branding</button>
+            <button type="button" class="catalog-filter" data-catalog-filter="IT Services">IT Services</button>
+          </div>
+        </div>
+        <div id="catalogGrid" class="catalog-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section template-section" id="print-templates">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Print Artwork Templates</p>
+          <h2>Download a template before sending your design.</h2>
+          <p class="lead">Use these PDF templates to prepare artwork at the correct size. After downloading, send the completed design through the quote form for checking and final pricing.</p>
+        </div>
+        <div class="template-grid">
+          <article class="template-card">
+            <span>PDF</span>
+            <h3>2m Aluminium Gazebo Wall Template</h3>
+            <p>Artwork guide for a 2m aluminium gazebo wall print setup.</p>
+            <div class="template-actions">
+              <a href="assets/images/chav-products/templates/2m%20Aluminium%20Gazebo%20Wall%20Template.pdf" download>Download Template</a>
+              <a href="index.html#quote">Send Design</a>
+            </div>
+          </article>
+          <article class="template-card">
+            <span>PDF</span>
+            <h3>2m Sharkfin Banner Template</h3>
+            <p>Artwork guide for a 2m sharkfin banner print setup.</p>
+            <div class="template-actions">
+              <a href="assets/images/chav-products/templates/2m%20Sharkfin%20Banner%20Template.pdf" download>Download Template</a>
+              <a href="index.html#quote">Send Design</a>
+            </div>
+          </article>
+          <article class="template-card">
+            <span>PDF</span>
+            <h3>2m x 0.85mm Pull Up Banner</h3>
+            <p>Artwork guide for a standard pull-up banner layout.</p>
+            <div class="template-actions">
+              <a href="assets/images/chav-products/templates/2m%20x%200.85mm%20Pull%20Up%20Banner.pdf" download>Download Template</a>
+              <a href="index.html#quote">Send Design</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Chav Solutions. All rights reserved.</p>
+      <a href="index.html#home">Back to home</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/catalog.js"></script>
+</body>
+</html>

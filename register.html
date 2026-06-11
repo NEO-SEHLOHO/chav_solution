@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create a Chav Solutions account. Browsing the website remains available without an account." />
+  <title>Register | Chav Solutions</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <div class="container auth-nav">
+      <a href="index.php#home" class="brand" aria-label="Chav Solutions home">
+        <img src="assets/logo/chav_solution_logo-removebg-preview.png" alt="Chav Solutions logo" class="brand-logo" />
+      </a>
+      <nav aria-label="Account navigation">
+        <a href="index.php#home">Browse Website</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-shell">
+    <section class="auth-card" aria-labelledby="registerTitle">
+      <div class="auth-copy">
+        <p class="eyebrow">Client Registration</p>
+        <h1 id="registerTitle">Create your account.</h1>
+        <p>Accounts are optional. Visitors can still browse all public pages and request quotes without registering.</p>
+      </div>
+
+      <form class="auth-form" id="registerForm" action="backend/register.php" method="post" novalidate>
+        <label for="registerName">Full Name</label>
+        <input id="registerName" name="name" type="text" autocomplete="name" required />
+
+        <label for="registerEmail">Email Address</label>
+        <input id="registerEmail" name="email" type="email" autocomplete="email" required />
+
+        <label for="registerPhone">Phone Number</label>
+        <input id="registerPhone" name="phone" type="tel" autocomplete="tel" />
+
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="8" required />
+        <small class="field-help">Use at least 8 characters.</small>
+
+        <label for="registerConfirmPassword">Confirm Password</label>
+        <input id="registerConfirmPassword" name="confirm_password" type="password" autocomplete="new-password" minlength="8" required />
+
+        <button type="submit" class="btn btn-primary">Create Account</button>
+        <p id="registerStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-switch">Already registered? <a href="login.html">Login</a> or <a href="index.php#home">continue browsing</a>.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

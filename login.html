@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Log in to your Chav Solutions account. Browsing and quote requests remain available without an account." />
+  <title>Login | Chav Solutions</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="auth-page">
+  <header class="auth-header">
+    <div class="container auth-nav">
+      <a href="index.php#home" class="brand" aria-label="Chav Solutions home">
+        <img src="assets/logo/chav_solution_logo-removebg-preview.png" alt="Chav Solutions logo" class="brand-logo" />
+      </a>
+      <nav aria-label="Account navigation">
+        <a href="index.php#home">Browse Website</a>
+        <a href="register.html">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-shell">
+    <section class="auth-card" aria-labelledby="loginTitle">
+      <div class="auth-copy">
+        <p class="eyebrow">Client Login</p>
+        <h1 id="loginTitle">Welcome back.</h1>
+        <p>Log in when you want account access. You can still browse services, view work and request quotes without logging in.</p>
+      </div>
+
+      <form class="auth-form" id="loginForm" action="backend/login.php" method="post" novalidate>
+        <label for="loginEmail">Email Address</label>
+        <input id="loginEmail" name="email" type="email" autocomplete="email" required />
+
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password" autocomplete="current-password" required />
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <p id="loginStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-switch">No account yet? <a href="register.html">Create one</a> or <a href="index.php#home">continue browsing</a>.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
